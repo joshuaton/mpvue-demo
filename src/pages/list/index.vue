@@ -11,7 +11,9 @@
 </template>
 
 <script>
+
 export default{
+
 	data () {
 		return {
 			lists: [
@@ -32,7 +34,31 @@ export default{
 					title: 'title',
 					desc: 'desc',
 					picUrl: 'http://mat1.gtimg.com/www/qq2018/imgs/qq_logo_2018x2.png'
-				}
+				},
+				{
+					id : '4',
+					title: 'title',
+					desc: 'desc',
+					picUrl: 'http://mat1.gtimg.com/www/qq2018/imgs/qq_logo_2018x2.png'
+				},
+				{
+					id : '5',
+					title: 'title',
+					desc: 'desc',
+					picUrl: 'http://mat1.gtimg.com/www/qq2018/imgs/qq_logo_2018x2.png'
+				},
+				{
+					id : '6',
+					title: 'title',
+					desc: 'desc',
+					picUrl: 'http://mat1.gtimg.com/www/qq2018/imgs/qq_logo_2018x2.png'
+				},
+				{
+					id : '7',
+					title: 'title',
+					desc: 'desc',
+					picUrl: 'http://mat1.gtimg.com/www/qq2018/imgs/qq_logo_2018x2.png'
+				},
 			]
 		}
 	},
@@ -63,6 +89,4 @@ export default{
 	flex: auto;
 	justify-content: center;
 }
-
-
 </style>
