@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div v-for="(item, index) in lists" :key="item.id" class="item">
+		<div v-for="(item, index) in lists" :key="item.id" class="item" @click="gotoDetail">
 			<img :src="item.picUrl" class="item-pic-url"></img>
 			<div class="item-title-desc">
 				<div class="item-title">{{item.title}}</div>
@@ -34,6 +34,13 @@ export default{
 					picUrl: 'http://mat1.gtimg.com/www/qq2018/imgs/qq_logo_2018x2.png'
 				}
 			]
+		}
+	},
+
+	methods: {
+		gotoDetail () {
+			const url = '../detail/main'
+      		wx.navigateTo({ url })
 		}
 	}
 }
