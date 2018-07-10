@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div v-for="(item, index) in lists" :key="item.id" class="item" @click="gotoDetail">
+		<div v-for="(item, index) in lists" :key="item.id" class="item" @click="gotoDetail(item.id)">
 			<img :src="item.picUrl" class="item-pic-url"></img>
 			<div class="item-title-desc">
 				<div class="item-title">{{item.title}}</div>
@@ -38,9 +38,10 @@ export default{
 	},
 
 	methods: {
-		gotoDetail () {
-			const url = '../detail/main'
-      		wx.navigateTo({ url })
+		gotoDetail (id) {
+      		wx.navigateTo({ 
+      			url: '../detail/main?id='+id
+      		})
 		}
 	}
 }
